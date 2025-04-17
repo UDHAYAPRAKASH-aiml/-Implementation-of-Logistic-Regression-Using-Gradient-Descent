@@ -9,17 +9,19 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 
 ## Algorithm
 ```
-1.Import Necessary Libraries: Import NumPy, pandas, and StandardScaler for numerical operations, data handling, and feature scaling, respectively.
+1.Preprocess Data: Load the dataset, drop unused columns, and encode categorical features numerically.
 
-2.Define the Linear Regression Function: Create a linear regression function using gradient descent to iteratively update parameters, minimizing the difference between predicted and actual values.
+2.Split Features/Labels: Separate input features X and target labels Y, then add a bias term to X.
 
-3.Load and Preprocess the Data: Load the dataset, extract features and target variable, and standardize both using StandardScaler for consistent model training.
+3.Initialize Parameters: Randomly initialize theta (weights) for the model.
 
-4.Perform Linear Regression: Apply the defined linear regression function to the scaled features and target variable, obtaining optimal parameters for the model.
+4.Define Functions: Implement the sigmoid activation, loss function, and gradient descent algorithm.
 
-5.Make Predictions on New Data: Prepare new data, scale it, and use the trained model to predict the target variable, transforming predictions back to the original scale.
+5.Train Model: Use gradient descent to optimize theta over multiple iterations.
 
-6.Print the Predicted Value
+6.Predict & Evaluate: Use the trained theta to predict outcomes and evaluate model accuracy.
+
+
 ```
 Program:
 
